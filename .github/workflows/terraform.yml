@@ -18,11 +18,8 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.12.2
-
-      - name: AWS Configure
-        run: aws configure
-
+          terraform_version: 1.6.6
+          
       - name: Terraform Init
         run: terraform init
 
