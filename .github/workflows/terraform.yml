@@ -20,6 +20,9 @@ jobs:
         with:
           terraform_version: 1.12.2
 
+      - name: AWS Configure
+        run: aws configure
+
       - name: Terraform Init
         run: terraform init
 
